@@ -1,0 +1,5 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "native/simple_rijndael_nif/Cargo.toml"
+  ]
+}
