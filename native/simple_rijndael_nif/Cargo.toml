@@ -3,6 +3,7 @@ name = "simple_rijndael_nif"
 version = "0.1.0"
 authors = []
 edition = "2021"
+rust-version = "1.79"
 
 [lib]
 name = "simple_rijndael_nif"
@@ -10,5 +11,5 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-rustler = "0.33.0"
+rustler = "0.34.0"
 simple-rijndael = "0.3.2"
