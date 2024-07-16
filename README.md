@@ -6,7 +6,7 @@ A binding to the PurePeace's simple-rijndael Rust crate for Elixir.
 ](https://www.paypal.com/donate/?business=QQGMTC3FQAJF6&no_recurring=0&item_name=Thanks+for+donating+for+me%2C+this+helps+me+a+lot+to+continue+developing+and+maintaining+my+projects.&currency_code=USD)
 [![GitHub Sponsor](https://img.shields.io/badge/GitHub%20Sponsor-181717?style=for-the-badge&logo=github&logoColor=%23fff)
 ](https://github.com/sponsors/nashiradeer)
-[![Hex.pm](https://img.shields.io/hexpm/v/simple-rijndael?style=for-the-badge&logo=elixir&logoColor=%23fff&label=Hex.pm&labelColor=%234B275F&color=%234B275F)](https://hex.pm/packages/simple_rijndael)
+[![Hex.pm](https://img.shields.io/hexpm/v/simple_rijndael?style=for-the-badge&logo=elixir&logoColor=%23fff&label=Hex.pm&labelColor=%234B275F&color=%234B275F)](https://hex.pm/packages/simple_rijndael)
 [![HexDocs.pm](https://img.shields.io/badge/HexDocs.pm-4B275F?style=for-the-badge&logo=elixir&logoColor=%23fff)
 ](https://hexdocs.pm/simple_rijndael/)
 
@@ -18,7 +18,7 @@ AES has removed the block size of 256 bits from the standard and if a old system
 
 **Warning:** You will need the [Rust compiler](https://www.rust-lang.org/tools/install) to compile this package.
 
-This package has been published in [Hex.pm](https://hex.pm/packages/simple_rinjdael) and you can use it with:
+This package has been published in [Hex.pm](https://hex.pm/packages/simple_rijndael) and you can use it with:
 
 ```elixir
 def deps do
