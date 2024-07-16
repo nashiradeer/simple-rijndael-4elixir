@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Setup OTP ${{ env.OTP_VERSION }} and Elixir ${{ env.ELIXIR_VERSION }}
       uses: erlef/setup-beam@v1.18.0
       with:
@@ -31,6 +31,6 @@ jobs:
     - name: Install dependencies
       run: |
         mix deps.get
-        mix compile
+        mix deps.compile
     - name: Run tests
       run: mix test
