@@ -1,0 +1,33 @@
+name: Build & Deploy
+
+on:
+  push:
+    tags: ["v*"]
+
+env:
+  CARGO_TERM_COLOR: always
+  RUST_VERSION: "1.79"
+  ELIXIR_VERSION: "1.17.1"
+  OTP_VERSION: "27.0"
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup OTP ${{ env.OTP_VERSION }} and Elixir ${{ env.ELIXIR_VERSION }}
+      uses: erlef/setup-beam@v1.18.0
+      with:
+        otp-version: ${{ env.OTP_VERSION }}
+        elixir-version: ${{ env.ELIXIR_VERSION }}
+    - name: Install Rust ${{ env.RUST_VERSION }}
+      run: rustup install ${{ env.RUST_VERSION }}
+    - name: Set Rust  ${{ env.RUST_VERSION }} as default
+      run: rustup default ${{ env.RUST_VERSION }}
+    - name: Install dependencies
+      run: |
+        mix deps.get
+        mix deps.compile
+    - name: Build and deploy
+      run: HEX_API_KEY=${{ secrets.HEX_API_KEY }} mix hex.publish --yes
