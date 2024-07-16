@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = []
 edition = "2021"
 rust-version = "1.79"
+publish = false
 
 [lib]
 name = "simple_rijndael_nif"
