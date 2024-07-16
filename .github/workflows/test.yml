@@ -14,7 +14,7 @@ env:
   OTP_VERSION: "27.0"
 
 jobs:
-  check:
+  test:
     runs-on: ubuntu-24.04
 
     steps:
