@@ -7,7 +7,7 @@ defmodule SimpleRijndael.MixProject do
   def project do
     [
       app: :simple_rijndael,
-      name: "SimpleRijndael",
+      name: "simple-rijndael",
       version: @version,
       elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
