@@ -30,7 +30,7 @@ defmodule SimpleRijndael.MixProject do
 
   defp package do
     [
-      description: "A simple Rijndael implementation for Elixir.",
+      description: "A binding to the PurePeace's simple-rijndael Rust crate for Elixir.",
       files: ["lib", "mix.exs", "README.md", "LICENSE.txt", "native", "test"],
       maintainers: ["Nashira Deer"],
       licenses: ["MIT"],
